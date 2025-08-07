@@ -208,4 +208,7 @@ section .descript {
   main .bg-shape {
     width: 30%;
   }
+  section h1{
+    font-size: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
