@@ -202,13 +202,13 @@ section .descript {
     margin-left: 10em;
     width: 40%;
   }
+  main section h1 {
+    font-size: 5rem;
+  }
   main section .descript {
     text-align: left;
   }
   main .bg-shape {
     width: 30%;
-  }
-  section h1{
-    font-size: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */

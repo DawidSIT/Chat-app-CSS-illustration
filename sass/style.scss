@@ -7,7 +7,7 @@ html {
 	font-size: 62.5%;
 }
 
- main {
+main {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -22,7 +22,7 @@ html {
 	position: absolute;
 	width: 50vw;
 	height: 90vh;
-	&-top{
+	&-top {
 		top: 0;
 		left: 0;
 		border-bottom-right-radius: 700px;
@@ -34,7 +34,6 @@ html {
 		border-top-left-radius: 700px;
 		background: hsl(240, 3%, 94%);
 	}
-	
 }
 .phone {
 	position: relative;
@@ -174,34 +173,37 @@ html {
 		}
 	}
 }
-section{
+section {
 	z-index: 1;
 	h1 {
-	padding: 1em 0em;
-	color: hsl(271, 36%, 24%);
-	text-align: center;
-	font-size: 4rem;
+		padding: 1em 0em;
+		color: hsl(271, 36%, 24%);
+		text-align: center;
+		font-size: 4rem;
+	}
+	.descript {
+		text-align: center;
+		padding: 0em 1em 3em;
+		font-size: 1.8rem;
+		line-height: 1.6em;
+		color: hsl(270deg 3.3% 21.49%);
+	}
 }
-.descript {
-	text-align: center;
-	padding: 0em 1em 3em;
-	font-size: 1.8rem;
-	line-height: 1.6em;
-	color: hsl(270deg 3.3% 21.49%)
-}
-}
-@media (min-width:75em) {
-	main{
+@media (min-width: 75em) {
+	main {
 		flex-direction: row;
 		justify-content: center;
-		section{
+		section {
 			margin-left: 10em;
 			width: 40%;
-			.descript{
+			h1 {
+				font-size: 5rem;
+			}
+			.descript {
 				text-align: left;
 			}
 		}
-		.bg-shape{
+		.bg-shape {
 			width: 30%;
 		}
 	}
