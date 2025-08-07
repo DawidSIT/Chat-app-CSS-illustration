@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(270, 20%, 96%);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.bg-shape {
+  position: absolute;
+  width: 50vw;
+  height: 90vh;
+}
+.bg-shape-top {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 700px;
+  background: linear-gradient(270deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.bg-shape-bottom {
+  right: 0;
+  bottom: 0px;
+  border-top-left-radius: 700px;
+  background: hsl(240, 3%, 94%);
+}
+
+.phone {
+  position: relative;
+  width: 300px;
+  margin-top: 4em;
+  background-color: hsl(270, 20%, 96%);
+  border: 10px white solid;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.phone .header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  padding: 0.8em;
+  padding-top: 1.8em;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.phone .header__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px #fff solid;
+}
+.phone .header__text {
+  padding-left: 1em;
+}
+.phone .header__name {
+  font-size: 1.5rem;
+}
+.phone .header__access {
+  padding-top: 0.3em;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.phone .header__dots {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.phone .header__dots::before {
+  content: "";
+  position: absolute;
+  top: 150%;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.phone .header__dots::after {
+  content: "";
+  position: absolute;
+  top: -150%;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.phone .header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1.3em;
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.phone .main {
+  position: relative;
+  padding: 0.8em;
+  font-size: 1rem;
+  background-color: hsl(270, 20%, 96%);
+}
+.phone .main__message {
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(270, 100%, 95%);
+  margin-bottom: 1em;
+  border-radius: 8px;
+  padding: 0.8em;
+  max-width: 70%;
+  min-width: 0px;
+}
+.phone .main__message--right {
+  margin-left: auto;
+  color: hsl(271, 15%, 43%);
+  background-color: hsl(0, 0%, 100%);
+  text-align: right;
+}
+.phone .main__message--right img {
+  width: 4.5em;
+  border-radius: 10px;
+}
+.phone .main__message--highlights {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(270deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.phone .main__message--highlights p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.phone .main .ask {
+  max-width: 45%;
+}
+.phone .main .message {
+  position: relative;
+}
+.phone .main .message input[type=text] {
+  width: 100%;
+  margin: 1em 0;
+  border-radius: 20px;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+.phone .main .message input[type=submit] {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  color: hsl(289, 62%, 90%);
+  background-color: hsl(271, 36%, 24%);
+}
+
+section {
+  z-index: 1;
+}
+section h1 {
+  padding: 1em;
+  color: hsl(271, 36%, 24%);
+  text-align: center;
+}
+section .descript {
+  text-align: center;
+  padding: 0em 1em 3em;
+  font-size: 1.8rem;
+  line-height: 1.6em;
+  color: hsl(270, 3.3%, 21.49%);
+}
+
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main section {
+    margin-left: 10em;
+    width: 40%;
+  }
+  main section .descript {
+    text-align: left;
+  }
+  main .bg-shape {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
